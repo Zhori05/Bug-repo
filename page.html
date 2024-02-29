@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broken Button</title>
+</head>
+<body>
+    <button id="brokenButton">Click Me</button>
+    <p id="output">Button has not been clicked yet.</p>
+    <script>
+        // Incorrect functionality: Using incorrect function name for event listener
+        document.getElementById('brokenButton').addEventListener('clickk', function() {
+            document.getElementById('output').textContent = "Button has been clicked!";
+        });
+    </script>
+</body>
+</html>
